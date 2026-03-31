@@ -1,0 +1,78 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+*.log
+*.sqlite
+*.sqlite3
+
+# ================================
+# Virtual Environment
+# ================================
+env/
+venv/
+.venv/
+ENV/
+
+# ================================
+# Streamlit
+# ================================
+.streamlit/
+.streamlit/secrets.toml
+
+# ================================
+# Database & User Data
+# ================================
+data/attendance.db
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# ================================
+# Face Recognition Data (DO NOT UPLOAD)
+# ================================
+data/known_faces/
+data/known_faces/**
+data/temp/
+data/temp/**
+data/faces/
+data/faces/**
+
+# ================================
+# AI Models & Weights
+# ================================
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.t7
+*.caffemodel
+*.weights
+*.yml
+*.yaml
+
+# ================================
+# Trained Face Models
+# ================================
+lbph_model.yml
+lbph_labels.pkl
+face_features.pkl
+
+# ================================
+# Embeddings & SVM
+# ================================
+output/
+embeddings/
+*.npy
+*.npz
+
+# ================================
+# Reports (PDF / Excel / CSV)
+# ================================
+data/reports/
+data/reports/*

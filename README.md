@@ -1,9 +1,38 @@
-# Smart-Attendance-with-Face-Liveness-Detection
-This OpenCV-powered Smart Attendance with Face Liveness Detection System features real-time facial recognition and liveness detection to prevent spoofing. Built with Python and Streamlit, it includes a Gemini-based AI chatbot for data queries and automated PDF/Excel reporting. Managed via a sleek dashboard, it’s a complete AI solution.
-📹 Smart Attendance System with AI Facial RecognitionAn end-to-end, AI-powered attendance solution that leverages OpenCV for real-time facial recognition and anti-spoofing liveness detection. This system automates the check-in process through a sleek Streamlit dashboard and features an integrated Gemini-powered chatbot for natural language record querying.✨ Key Features🔍 Advanced OpenCV Recognition: Implements high-accuracy face matching using LBPH (Local Binary Patterns Histograms) and DNN-based embeddings.🛡️ Anti-Spoofing Liveness Detection: Uses blink-frequency analysis to ensure the subject is a live person and not a photograph.🤖 AI Attendance Assistant: A built-in RAG (Retrieval-Augmented Generation) chatbot powered by Gemini 2.5 Flash to answer questions like "Was Rahul present yesterday?".📊 Automated Analytics: Generates daily/monthly reports with data visualization and exports to PDF, Excel, and CSV.⚙️ Live Enrollment: Register new students directly via the camera feed with automated dataset training.🛠️ Tech StackCategoryToolsComputer VisionOpenCV, DeepFace, Imutils FrontendStreamlit, Plotly Large Language ModelGoogle Gemini 2.5 Flash Database & Vector SearchSQLite3, FAISS Data ProcessingPandas, NumPy, Scikit-Learn 🚀 Quick Start1. Clone the RepositoryBashgit clone https://github.com/Mobel28/Smart_Face_Attendance.git
-cd Smart_Face_Attendance
-2. Install DependenciesBashpip install -r requirements.txt
-3. Environment SetupCreate a .env file or set your environment variables:Code snippetGOOGLE_API_KEY=your_gemini_api_key_here
-ATTENDANCE_DB_PATH=data/attendance.db
-4. Run the ApplicationBashpython main.py
-The system will initialize directories and launch the Streamlit dashboard automatically.📂 Project Structuredashboard.py: The primary UI containing the live feed, student management, and reporting tabs.face_recognition_system.py: The OpenCV engine handling face detection, LBPH training, and liveness logic.chatbot.py: Logic for the FAISS-powered RAG assistant.database.py: Manages the SQLite backend and report generation (PDF/Excel).embedding_pipeline.py: Scripts for processing facial embeddings and SVM training.🤝 ContributingContributions are welcome! Feel free to open an issue or submit a pull request to enhance the OpenCV pipeline or UI features.
+# 📹 Smart Attendance System with Face Liveness Detection
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.53+-FF4B4B.svg)](https://streamlit.io/)
+
+[cite_start]An end-to-end, AI-powered attendance solution that leverages **OpenCV** for real-time facial recognition and anti-spoofing liveness detection. [cite_start]This system automates the check-in process through a sleek Streamlit dashboard and features an integrated Gemini-powered chatbot for natural language record querying.
+
+---
+
+## ✨ Key Features
+
+* [cite_start]**🔍 Advanced OpenCV Recognition:** Implements high-accuracy face matching using **LBPH** (Local Binary Patterns Histograms) and **DNN-based embeddings**.
+* [cite_start]**🛡️ Anti-Spoofing Liveness Detection:** Uses blink-frequency analysis to ensure the subject is a live person and not a photograph.
+* [cite_start]**🤖 AI Attendance Assistant:** A built-in **RAG** (Retrieval-Augmented Generation) chatbot powered by **Gemini 2.5 Flash** and **FAISS** to answer questions like *"Was Rahul present yesterday?"*.
+* [cite_start]**📊 Automated Analytics:** Generates daily/monthly reports with data visualization and exports to **PDF, Excel, and CSV**.
+* [cite_start]**⚙️ Live Enrollment:** Register new students directly via the camera feed with automated dataset training.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+| :--- | :--- |
+| **Computer Vision** | **OpenCV**, DeepFace, Imutils |
+| **Frontend** | Streamlit, Plotly |
+| **Large Language Model** | Google Gemini 2.5 Flash |
+| **Database & Vector Search** | SQLite3, FAISS |
+| **Data Processing** | Pandas, NumPy, Scikit-Learn |
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/Zerodistraction-max/Smart-Attendance-with-Face-Liveness-Detection.git](https://github.com/Zerodistraction-max/Smart-Attendance-with-Face-Liveness-Detection.git)
+cd Smart-Attendance-with-Face-Liveness-Detection
